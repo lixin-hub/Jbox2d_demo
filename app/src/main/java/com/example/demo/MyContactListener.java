@@ -13,7 +13,7 @@ public class MyContactListener implements ContactListener
     @Override
     public void beginContact(Contact p1)
     {
-        Body body1=p1.getFixtureA().getBody();
+        Body body1=p1.getFixtureB().getBody();
         if (body1.getType() == BodyType.STATIC)
         {
             body1.setUserData(Color.BLUE);

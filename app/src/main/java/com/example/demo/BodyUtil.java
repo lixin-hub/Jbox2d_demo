@@ -27,8 +27,8 @@ public class BodyUtil
         cs.m_radius = r / Constant.RATE;
         FixtureDef fd=new FixtureDef();
         fd.density = 10;
-        fd.friction = 0f;
-        fd.restitution = 1f;
+        fd.friction = 4f;
+        fd.restitution = 0.8f;
         fd.shape = cs;
         body.setUserData(color);
         body.createFixture(fd);

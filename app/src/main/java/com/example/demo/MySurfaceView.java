@@ -70,6 +70,10 @@ public class MySurfaceView extends SurfaceView implements SurfaceHolder.Callback
                 body.drawSelf(canvas, paint);
             }
             holder.unlockCanvasAndPost(canvas);
+		
         }
     }
+	
+	
+	
 }
